@@ -1,4 +1,6 @@
-# How to program
+# Icesugar FPGA quickstart project
+
+## How to program
 
 Simply run `./main.py`.
 This will automatically build and upload the bitstream.
@@ -6,14 +8,16 @@ This will automatically build and upload the bitstream.
 For more information, see this readme, `main.py` and `blink.py`.
 If you still have questions, please open an issue so we can update the documentation.
 
-# Links
+## External links
 
-- Learning nmigen: [NMigen tutorial](https://github.com/RobertBaruch/nmigen-tutorial/)
+- Learning nmigen: [nMigen tutorial](https://github.com/RobertBaruch/nmigen-tutorial/)
 - Icesugar README: [Icesugar README](https://github.com/wuxx/icesugar/blob/master/README_en.md)
 
-# Icesugar configuration
+## Configuration
 
-## Resources
+For more information, see the [nMigen tutorial, part 9](https://github.com/RobertBaruch/nmigen-tutorial/blob/b03a0eb449275ec4100d4d5dac551568a42601af/9_synthesis.md#class-properties)
+
+### Resources
 
 - clk12
 - led_b (pin 39)
@@ -27,7 +31,7 @@ If you still have questions, please open an issue so we can update the documenta
   - but 3: pin 19
   - but 4: pin 18
 
-## Connectors
+### Connectors
 
 - pmod 1 (pin 10, 6, 3, 48, 9, 4, 2, 47)
 - pmod 2 (pin 46, 44, 42, 37, 45, 43, 38, 36)
@@ -35,7 +39,7 @@ If you still have questions, please open an issue so we can update the documenta
 - pmod 4 (pin 21, 20, 19, 18)
   - Hooked up to DIP switch / buttons
 
-# Set up environment
+## Set up environment
 
 **note:** You only have to set up this toolchain once on every system
 
@@ -45,7 +49,7 @@ Sources:
 - [http://www.clifford.at/icestorm/](http://www.clifford.at/icestorm/)
 - [https://nmigen.info/nmigen/latest/install.html#editable-development-snapshot](https://nmigen.info/nmigen/latest/install.html#editable-development-snapshot)
 
-## icestorm
+### icestorm
 
 ```bash
 git clone https://github.com/YosysHQ/icestorm.git icestorm
@@ -54,7 +58,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-## nextpnr
+### nextpnr
 
 ```bash
 git clone https://github.com/YosysHQ/nextpnr nextpnr
@@ -64,7 +68,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-## yosys
+### yosys
 
 ```bash
 git clone https://github.com/YosysHQ/yosys.git yosys
@@ -73,7 +77,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-## nmigen
+### nmigen
 
 ```bash
 git clone https://github.com/nmigen/nmigen
@@ -81,7 +85,7 @@ cd nmigen
 pip3 install --editable .[builtin-yosys]
 ```
 
-## nmigen-boards
+### nmigen-boards
 
 ```bash
 git clone https://github.com/nmigen/nmigen-boards
